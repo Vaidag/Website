@@ -1,0 +1,359 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*mano kodas*/
+    #first {
+        background: url(../img/veggies2.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 7%;
+        .basket {
+            display: block;
+            margin: 0 auto;
+            width: 55%;
+            background-color: white;
+            opacity: 0.8;
+            h1 {
+                font-size: 60px;
+                color: rgb(6, 37, 6);
+                text-align: center;
+                font-family: 'Lato', sans-serif;
+                padding: 18% 0 0 3%; 
+                width: 83%;
+            }
+            @media screen and (max-width: 900px) {
+                h1 {
+                    font-size: 45px;
+                }
+            } 
+            @media screen and (max-width: 590px) {
+                h1 {
+                    font-size: 30px;
+                }
+            }
+            p {
+                font-size: 150%;
+                color: rgba (0, 0, 0, 0.9);
+                font-family: 'Tinos', serif;
+                margin-top: 5%;
+                padding: 11.5%;
+                line-height: 1.5;
+                text-indent: 5.5%;
+                margin-bottom: 40px;
+                text-align: justify;
+            }  
+            @media screen and (max-width: 900px) {
+                p {
+                    font-size: 20px;
+                    padding: 8%;
+                }
+            }
+            @media screen and (max-width: 590px) {
+                p {
+                    font-size: 16px;
+                    padding: 7%;
+                }
+            }
+        }
+        @media screen and (max-width: 900px) {
+            .basket {
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 590px) {
+            .basket {
+                width: 95%;
+            }
+        }
+    }
+    #second {
+        background-color: rgb(6, 37, 6);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        .second2 {
+            background-color: rgb(245, 239, 239);
+            width: 93%;
+            display: block;
+            margin: 0 auto; 
+            .top {
+                font-family: 'Lato', sans-serif;
+                font-size:55px; 
+                text-align: center;
+                color: rgb(6, 37, 6);
+                margin-top: 4%;
+                width: 50%;
+                margin: 0 auto;
+                display: block;
+            } 
+            @media screen and (max-width: 1050px) {
+                .top {
+                    font-size: 45px;
+                    font-weight: bold;
+                }
+            }
+            @media screen and (max-width: 690px) {
+                .top {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+            .top:nth-of-type(1) {
+                padding: 4% 0 0 0;
+            }
+            .veggies, .veggies2, .veggies3 {
+                display: block;
+                margin:0 auto;
+                font-size: 0;
+                width: 90%;
+                margin-top: 3%;
+                padding: 2%;
+                margin-bottom: 3%;
+                .products, .products2, .products3 {
+                    display: inline-block;
+                    width: 22%;  
+                    padding:1.5%;
+                    margin: 1.5%;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    border: 1px solid lightgray;
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 30vh; 
+                    } 
+                    .moreinfo {
+                        background-color: rgb(201, 200, 200);
+                        cursor: pointer;
+                        padding: 18px;
+                        width: 100%;
+                        border: none;
+                        text-align: left;
+                        outline: none;
+                        h1 {
+                            font-size: 18px;
+                            color: rgb(6, 37, 6);
+                            font-weight: bold;
+                            text-align: center;
+                            margin-top: 5px;
+                        } 
+                        h2 {
+                            font-size: 18px;
+                            color: black;
+                            font-weight: bold;
+                            text-align: center;
+                            margin-top: 5px;
+                        }
+                    }  
+                .content {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                    background-color: rgb(143, 185, 143);
+                    p {
+                        margin-top: 5px;
+                        font-size: 20px;
+                        color: black;
+                        text-align: justify;
+                        padding: 3%;
+                        font-family: 'Tinos', serif;
+                    }  
+                } 
+                .active, .moreinfo:hover {
+                    background-color: rgb(143, 185, 143);
+                }
+                .moreinfo:after {
+                    content: '\002B';
+                    color: rgb(6, 37, 6);
+                    font-weight: bold;
+                    float: right;
+                    margin-left: 5px;
+                }
+                .active:after {
+                    content: "\2212";
+                    color: rgb(6, 37, 6);
+                }   
+            }
+                @media screen and (max-width: 960px) {
+                    .products, .products2, .products3 {
+                        width: 43%;
+                        margin: 3%;
+                    }
+                }
+                @media screen and (max-width: 600px) {
+                    .products, .products2, .products3 {
+                        display: block;
+                        margin: 0 auto;
+                        width: 80%;
+                        padding: 3%;
+                        margin-top: 5%;
+                    }
+                }
+            }
+            .bla {
+                color: black;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                width: 70%;
+                font-size: 22px;
+                font-family: 'Tinos', serif;
+                padding: 5%;
+                line-height: 1.5;
+                a {
+                    text-decoration: underline;
+                    color: rgb(6, 37, 6);
+                    font-size: 25px;
+                }
+            }  
+            @media screen and (max-width: 590px) {
+                .bla {
+                    font-size: 18px;
+                }
+            } 
+        }
+    }
+    #footer {	
+        display: block;
+        margin: 0 auto;
+        font-size: 0;
+        background-color: rgb(6, 37, 6);
+        height: 20%;	
+        padding: 10px;
+        .bottom {
+            display: block;
+            padding: 10px;
+            margin: 0 auto;
+            font-size: 0;
+            .form1 {
+                display: block;
+                margin: 0 auto;
+                padding: 1px;
+                h1 {
+                    font-size: 25px;
+                    color: white;
+                    margin-top: 5px;
+                    text-align: center;
+                    img {
+                        width: 6%;
+                        height: 6%;
+                        border-radius: 50%;
+                    }
+                }
+                p {
+                    font-size: 17px;
+                    color: beige;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                .email{
+                    width: 40%;
+                    display: block;
+                    margin: 0 auto;
+                    padding: 8px;
+                    border: none;
+                    text-decoration: none;
+                    border-radius: 3px;
+                    font-size: 15px;
+                    border-bottom:1px solid white;
+                    margin-top: 20px;
+                    margin-bottom: 10px;	
+                }
+                @media screen and (max-width: 596px) {
+                    .email {
+                        width: 75%;
+                    }
+                }
+                .send{
+                    margin-top: 10px;
+                    width: 20%;
+                    display: block;
+                    margin: 0 auto;
+                    padding: 10px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 3px;
+                    margin-bottom: 10px;
+                }
+                @media screen and (max-width: 596px) {
+                    .send {
+                        width: 40%;
+                    }
+                }
+                .send:hover{
+                    background-color: darkgray;
+                    color: black;
+                    font-weight: bold;
+                }
+                ul li {
+                    font-size: 16px;
+                    color: white;
+                    letter-spacing: 2px;
+                    line-height: 1.2;
+                    text-align: center;
+                    a {
+                        text-decoration: none;
+                        color: rgb(219, 131, 31);
+                        font-weight: bold;
+                        font-size: 21px;
+                        padding: 3px;
+                    }
+                    a:hover {
+                        background-color: beige;
+                    }		
+                }
+            }
+        }
+    }
+
+
+
+

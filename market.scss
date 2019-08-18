@@ -1,0 +1,397 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*mano kodas*/
+    #first {
+        background: url(../img/fmarket.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 9%;
+        .basket {
+            display: block;
+            margin: 0 auto;
+            width: 55%;
+            background-color: white;
+            opacity: 0.8;
+            h1 {
+                display: block;
+                margin: 0 auto;
+                font-size: 60px;
+                color: rgb(6, 37, 6);
+                font-family: 'Lato', sans-serif;
+                padding: 8% 0 0 0;
+                width: 83%;
+            } 
+            @media screen and (max-width: 1230px) {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+            @media screen and (max-width: 730px) {
+                h1 {
+                    font-size: 30px;
+                }
+            }
+            p {
+                font-size: 150%;
+                color: #000000;
+                font-family: 'Tinos', serif;
+                text-align: justify;
+                margin: 2% 3% 5% 3%;
+                padding: 12%;
+                line-height: 1.5;
+            }  
+            @media screen and (max-width: 1230px) {
+                p {
+                    font-size: 20px;
+                }
+            }
+            @media screen and (max-width: 730px) {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+        @media screen and (max-width: 990px) {
+            .basket {
+               width: 88%;
+            }
+        }
+    }
+    #marketmain {
+        background-color: rgb(6, 37, 6);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        .main {
+            background-color: rgb(245, 239, 239);
+            width: 93%;
+            display: block;
+            margin: 0 auto; 
+            .info {
+                display: block;
+                margin: 0 auto;
+                width: 90%;
+                .infoa {
+                    display: block;
+                    margin: 0 auto;
+                    width: 90%;
+                    margin-bottom: 3%;
+                    padding: 3%;
+                    .maininfo1 {
+                        display: inline-block;
+                        width: 45%;
+                        padding: 2%;
+                        border-right: 1px solid black;
+                        h1 {
+                            font-family: 'Lato', sans-serif;
+                            font-size:35px; 
+                            text-align: left;
+                            color: rgb(6, 37, 6);
+                            width: 80%;
+                            margin: 0 auto;
+                            display: block;
+                            padding: 3%;
+                        }
+                        @media screen and (max-width: 921px) {
+                            h1 {
+                               font-size: 25px;
+                            }
+                        } 
+                        h2 {
+                            font-family: 'Tinos', serif;
+                            font-size:18px; 
+                            text-align: left;
+                            color: black;
+                            width: 80%;
+                            line-height: 1.5;
+                            margin: 0 auto;
+                            display: block;
+                            margin-top: 6%;
+                        }
+                        @media screen and (max-width: 921px) {
+                            h2 {
+                               font-size: 15px;
+                            }
+                        }
+                    }
+                    @media screen and (max-width: 668px) {
+                        .maininfo1 {
+                           display: block;
+                           margin: 0 auto;
+                           border-right: none;
+                           width: 80%;
+                           padding: 5%;
+                        }
+                    }
+                    .maininfo2 {
+                        display: inline-block;
+                        width: 45%; 
+                        margin-left: 2%;
+                        padding: 1.5%;
+                        .info1 {
+                            font-family: 'Tinos', serif;
+                            font-size:20px; 
+                            text-align: justify;
+                            color: black;
+                            padding: 3%;
+                            margin: 3% 0 1% 0;
+                            line-height: 1.5;
+                        } 
+                        @media screen and (max-width: 921px) {
+                            .info1 {
+                               font-size: 13px;
+                            }
+                        }
+                        .info2 a {
+                            display: block;
+                            margin: 0 auto;
+                            font-family: 'Tinos', serif;
+                            font-size: 18px; 
+                            text-align: center;
+                            text-decoration: none;
+                            color: rgb(6, 37, 6);
+                            font-weight: bold;
+                        }
+                        @media screen and (max-width: 921px) {
+                            .info2 a {
+                               font-size: 13px;
+                            }
+                        }
+                    } 
+                    @media screen and (max-width: 668px) {
+                        .maininfo2 {
+                           display: block;
+                           margin: 0 auto;
+                           border-right: none;
+                           width: 80%;
+                           padding: 5%;
+                        }
+                    }
+                }
+            }              
+            .pictures {
+                width: 95%;
+                display: block;
+                margin: 0 auto;
+                .pictures1 {
+                    display: block;
+                    margin: 0 auto; 
+                    font-size: 0;		
+                    padding: 1%;
+                    img {
+                        display: inline-block;
+                        width: 300px;
+                        height:230px;
+                        padding: 1%;
+                        margin: 1.8%;
+                        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    }
+                    @media screen and (max-width: 1265px) {
+                        img {
+                           width: 280px;
+                           height: 200px;
+                           padding: 8px;
+                           margin: 16px;
+                        }
+                    }
+                    @media screen and (max-width: 1149px) {
+                        img {
+                           width: 250px;
+                           height: 200px;
+                           padding: 8px;
+                           margin: 26px;
+                        }
+                    }
+                    @media screen and (max-width: 1118px) {
+                        img {
+                           width: 400px;
+                           height: 300px;
+                           padding: 5px;
+                           margin: 10px;
+                        }
+                    }
+                    @media screen and (max-width: 1010px) {
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                           width: 450px;
+                           height: 360px;
+                           margin-bottom: 10px;
+                           padding: 12px;
+                           
+                        }
+                    }
+                    @media screen and (max-width: 594px) {
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                           width: 260px;
+                           height: 200px;
+                           padding: 12px;
+                           margin-bottom: 13px;
+                        }
+                    }
+                    img:hover {
+                        opacity: 0.5; 
+                    }
+                }
+                p {
+                    font-size: 25px;
+                    font-family: 'Tinos', serif;
+                    color: black;
+                    text-align: center;
+                    padding: 6%;
+                    a {
+                        color:white;
+                        background-color: rgb(6, 39, 6);
+                        padding: 0.5%;
+                        border-radius: 6px;
+                        margin-left: 10px;
+                    }
+                }
+            }      
+        }
+    }
+    #footer {	
+        display: block;
+        margin: 0 auto;
+        font-size: 0;
+        background-color: rgb(6, 37, 6);
+        height: 20%;	
+        padding: 10px;
+        .bottom {
+            display: block;
+            padding: 10px;
+            margin: 0 auto;
+            font-size: 0;
+            .form1 {
+                display: block;
+                margin: 0 auto;
+                padding: 1px;
+                h1 {
+                    font-size: 25px;
+                    color: white;
+                    margin-top: 5px;
+                    text-align: center;
+                    img {
+                        width: 6%;
+                        height: 6%;
+                        border-radius: 50%;
+                    }
+                }
+                p {
+                    font-size: 17px;
+                    color: beige;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                .email{
+                    width: 40%;
+                    display: block;
+                    margin: 0 auto;
+                    padding: 8px;
+                    border: none;
+                    text-decoration: none;
+                    border-radius: 3px;
+                    font-size: 15px;
+                    border-bottom:1px solid white;
+                    margin-top: 20px;
+                    margin-bottom: 10px;	
+                }
+                @media screen and (max-width: 596px) {
+                    .email {
+                        width: 75%;
+                    }
+                }
+                .send{
+                    margin-top: 10px;
+                    width: 20%;
+                    display: block;
+                    margin: 0 auto;
+                    padding: 10px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 3px;
+                    margin-bottom: 10px;
+                }
+                @media screen and (max-width: 596px) {
+                    .send {
+                        width: 40%;
+                    }
+                }
+                .send:hover{
+                    background-color: darkgray;
+                    color: black;
+                    font-weight: bold;
+                }
+                ul li {
+                    font-size: 16px;
+                    color: white;
+                    letter-spacing: 2px;
+                    line-height: 1.2;
+                    text-align: center;
+                    a {
+                        text-decoration: none;
+                        color: rgb(219, 131, 31);
+                        font-weight: bold;
+                        font-size: 21px;
+                        padding: 3px;
+                    }
+                    a:hover {
+                        background-color: beige;
+                    }		
+                }
+            }
+        }
+    }
+
+
+
